@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <img src="NITT.jpg">
+        <h1>NITT Student Portal</h1>
+    </header>
+   
+    <form id="create">
+        <h2>Add Student Details</h2>
+        <label for="name">Name</label>
+        <input class="nameInp" type="text"name="name">
+        <label for="rollNum">Roll No.</label>
+        <input class="rollNumInp" type="text" name="rollNum">
+        <button class="submitbtn"  type="button" onclick="create()">Submit</button>
+    </form>
+
+    <form id="updatePrompt">
+        <h2>Update Section</h2>
+        <input id="updateInp" type="text" name="rollNum" placeholder="enter the existing roll no.">
+        <button class="updatebtn" type="button" onclick="getUpdateForm()">Update</button>
+    </form>
+    <form id="update">
+        <h2>Update Student Details</h2>
+        <label for="name">Name</label>
+        <input class="nameInp" type="text"name="name">
+        <label for="rollNum">Roll No.</label>
+        <input class="rollNumInp" type="text" name="rollNum">
+        <button class="submitbtn" type="button" onclick="update()">Submit</button>
+    </form>
+    <h3>Search Student</h3>
+    <input id="searchInp" oninput="autoComplete()" placeholder="search with name or existing roll no.">
+    <!-- <button type="button" onclick="search()">Search</button> -->
+    <div id="box"></div>
+    <script src="index.js"></script>
+</body>
+</html>

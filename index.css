@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+*{
+    font-family: 'Sen';
+    margin:0;
+    box-sizing: border-box;
+    user-select: none;
+}
+header{
+    display: flex;
+    color:#fff;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(16, 19, 15);
+}
+img{
+    height: 100%;
+}
+h1,h3{
+    margin-left: 20px;
+}
+label{
+    font-size:1.4em;
+}
+#create,#updatePrompt{
+display: flex;
+flex-direction: column;
+margin:10px 20px;
+}
+
+#update{
+    display: none;
+    flex-direction: column;
+    margin:10px 20px;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    margin:10px 20px;
+}
+#box div{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    margin:5px 0;
+}
+#box div div{
+    display: block;
+    margin-right: 5px;
+    flex:1;
+}
+
+input{
+    width: 45vw;
+    padding:5px;
+    margin-bottom: 10px;
+}
+#searchInp{
+    width: 45vw;
+    margin: 10px 20px;
+}
+.submitbtn,.updatebtn,#box button{
+    width: 15vw;
+    border:none;
+    background:rgb(28, 109, 231);
+    color: #fff;
+    padding:10px;
+    outline: none;
+}
+.updatebtn{
+    background:rgb(28, 231, 28);
+}
+#box button{
+    margin-right: 30px;
+    background:rgb(231, 28, 28);
+}
